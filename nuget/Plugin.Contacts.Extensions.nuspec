@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Plugin.Contacts.Extensions</id>
+        <version>1.0.0</version>
+        <title>Contacts Extensions</title>
+        <authors>Laurentiu Stamate</authors>
+        <owners>Laurentiu Stamate</owners>
+        <licenseUrl>https://github.com/laurentiustamate94/contact-extensions/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/laurentiustamate94/contact-extensions</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/laurentiustamate94/contact-extensions/master/nuget/logo.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>NetStandard implementation of actions that you can do on a Contact: Call, Sms, Email</description>
+        <releaseNotes>Initial release containing all the necessary contact extensions logic</releaseNotes>
+        <copyright>Copyright 2017</copyright>
+        <tags>xamarin xamarin-forms netstandard contact contacts extensions call phone sms message email mail</tags>
+        <dependencies>
+            <group targetFramework="MonoAndroid10">
+                <!-- MonoAndroid dependencies go here -->
+            </group>
+            <group targetFramework="Xamarin.iOS10">
+                <!-- Xamarin.iOS10 dependencies go here -->
+            </group>
+            <group targetFramework="uap10">
+                <!-- UWP dependencies go here -->
+                <dependency id="NETStandard.Library" version="1.6.1" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <!-- NetStandard reference assemblies -->
+        <file src="..\Plugin.Contacts.Extensions\bin\Release\Plugin.Contacts.Extensions.dll" target="lib\netstandard1.4\Plugin.Contacts.Extensions.dll" />
+        <file src="..\Plugin.Contacts.Extensions.Abstractions\bin\Release\Plugin.Contacts.Extensions.Abstractions.dll" target="lib\netstandard1.4\Plugin.Contacts.Extensions.Abstractions.dll" />
+        
+		<!-- Android reference assemblies -->
+        <file src="..\Plugin.Contacts.Extensions.Android\bin\Release\Plugin.Contacts.Extensions.dll" target="lib\MonoAndroid10\Plugin.Contacts.Extensions.dll" />
+        <file src="..\Plugin.Contacts.Extensions.Abstractions\bin\Release\Plugin.Contacts.Extensions.Abstractions.dll" target="lib\MonoAndroid10\Plugin.Contacts.Extensions.Abstractions.dll" />
+        
+		<!-- iOS reference assemblies -->
+        <file src="..\Plugin.Contacts.Extensions.iOS\bin\Release\Plugin.Contacts.Extensions.dll" target="lib\Xamarin.iOS10\Plugin.Contacts.Extensions.dll" />
+        <file src="..\Plugin.Contacts.Extensions.Abstractions\bin\Release\Plugin.Contacts.Extensions.Abstractions.dll" target="lib\Xamarin.iOS10\Plugin.Contacts.Extensions.Abstractions.dll" />
+        
+		<!-- UWP reference assemblies -->
+        <file src="..\Plugin.Contacts.Extensions.UWP\bin\Release\Plugin.Contacts.Extensions.dll" target="lib\uap10\Plugin.Contacts.Extensions.dll" />
+        <file src="..\Plugin.Contacts.Extensions.Abstractions\bin\Release\Plugin.Contacts.Extensions.Abstractions.dll" target="lib\uap10\Plugin.Contacts.Extensions.Abstractions.dll" />
+    </files>
+</package>
