@@ -39,7 +39,7 @@ namespace Plugin.Contacts.Extensions
 
             emailMessage.To.Add(new EmailRecipient(toAddress));
 
-            //await EmailManager.ShowComposeNewEmailAsync(emailMessage);
+            await EmailManager.ShowComposeNewEmailAsync(emailMessage);
         }
     }
 }
